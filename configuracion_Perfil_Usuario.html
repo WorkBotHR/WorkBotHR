@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración - Perfil Usuario</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- BOTONES PARTE SUPERIOR DEL HOME -->
+    <header>
+        <div class="top-buttons">
+            <button type="button" class="Boton-Notificaciones">
+                <span><i class="fa-regular fa-bell"></i></span>
+            </button>
+            <button type="button" class="Boton-Configuracion">
+                <span><i class="fa-solid fa-gear"></i></span>
+            </button>
+            <button type="button" class="Boton-Perfil">
+                <span><i class="fa-regular fa-user"></i></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MENU LATERAL -->
+    <aside class="MenuLateral">
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#"><i class="fa-solid fa-users"></i>Empleados</a></li>
+                <li><a href="#"><i class="fa-solid fa-file-invoice"></i>Gestion de talento</a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-simple"></i>Rendimiento</a></li>
+                <li><a href="#"><i class="fa-solid fa-calendar-days"></i>Horario</a></li>
+                <li><a href="#"><i class="fa-solid fa-shield-halved"></i>Politica</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <form class="container">
+        <fieldset>
+          <legend>Configuración de usuario</legend>
+          <div class="section">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="section">
+            <label for="home">Casa:</label>
+            <input type="text" id="home" name="home">
+          </div>
+          <div class="section">
+            <label for="employees">Empleados:</label>
+            <input type="text" id="employees" name="employees">
+          </div>
+          <div class="section">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Prueba08@gmail.com">
+          </div>
+          <div class="section">
+            <label for="role">Rol:</label>
+            <input type="text" id="role" name="role">
+          </div>
+          <div class="section">
+            <label for="performance">Rendimiento:</label>
+            <input type="text" id="performance" name="performance" >
+          </div>
+          <div class="section">
+            <label for="hours">Horarios:</label>
+            <input type="text" id="hours" name="hours">
+          </div>
+
+          <div class="section">
+            <label for="language">Idioma:</label>
+            <input type="text" id="language" name="language">
+          </div>
+          <div class="section">
+            <label for="timezone">Zona horaria:</label>
+            <input type="text" id="timezone" name="timezone">
+          </div>
+          <div class="section">
+            <label for="user_id">ID de usuario:</label>
+            <input type="text" id="user_id" name="user_id" readonly>
+          </div>
+          <div class="section">
+            <button type="submit">Guardar cambios</button>
+          </div>
+        </fieldset>
+      </form>
+
+
+
+
+</body>
+</html>
