@@ -4,43 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WorkBot - Home</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- BOTONES PARTE SUPERIOR DEL HOME -->
     <header>
         <div class="top-buttons">
-            <button type="button" class="Boton-Notificaciones">
+            <type="button" class="Boton-Notificaciones">
                 <span><i class="fa-regular fa-bell"></i></span>
-            </button>
-            <button type="button" class="Boton-Configuracion">
+            </type>
+            <type="button" class="Boton-Configuracion">
                 <span><i class="fa-solid fa-gear"></i></span>
-            </button>
-            <button type="button" class="Boton-Perfil">
-                <span><i class="fa-regular fa-user"></i></span>
-            </button>
+            </type>
+            <type="button" class="Boton-Perfil">
+                <span><img src="imagenes/perfil.PNG" width="50" height="50"></span>
+            </type>
         </div>
+        <br>
     </header>
 
     <!-- MENU LATERAL -->
     <aside class="MenuLateral">
         <nav>
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
-                <li><a href="#"><i class="fa-solid fa-users"></i>Empleados</a></li>
-                <li><a href="#"><i class="fa-solid fa-file-invoice"></i>Gestion de talento</a></li>
-
-                <div class="menu_Rendimiento">
-                    <li><a href="#"><i class="fa-solid fa-chart-simple"></i>Rendimiento</a></li>
-                    <div class="subMenu">
-                        <ul><a href="#">Metas</a></ul>
-                        <ul><a href="desempeño.html">Desempeño</a></ul>
-                    </div>
-                </div>
-
-                <li><a href="#"><i class="fa-solid fa-calendar-days"></i>Horario</a></li>
-                <li><a href="#"><i class="fa-solid fa-shield-halved"></i>Politica</a></li>
-            </ul>
+                <img src="imagenes/logo.PNG" alt="" width="150" height="150">
+                <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="#"><i class="fa-solid fa-users"></i>Empleados</a>
+                <a href="#"><i class="fa-solid fa-file-invoice"></i>Gestion de talento</a>
+                <a href="metas.html"><i class="fa-solid fa-chart-simple"></i>Rendimiento</a>
+                <a href="#"><i class="fa-solid fa-calendar-days"></i>Horario</a>
+                <a href="#"><i class="fa-solid fa-shield-halved"></i>Politica</a>
         </nav>
     </aside>
 
@@ -54,31 +47,31 @@
         </section>
 
         <!-- ACCESO RAPIDO, NOMINA, RECLUTAMIENTO, ETC... -->
+        <h2>Acceso Rápido</h2>
         <section class="quick-access">
-            <h2>Acceso Rápido</h2>
-            <div class="box">
+            <div class="box-Nomina">
                 <h3>Nómina</h3>
             </div>
-            <div class="box">
+            <div class="box-Reclutamiento">
                 <h3>Reclutamiento</h3>
             </div>
-            <div class="box">
+            <div class="box-Asistencia">
                 <h3>Asistencia</h3>
             </div>
-            <div class="box">
+            <div class="box-Desempeno">
                 <h3>Desempeño</h3>
             </div>
         </section>
-        
+        <br>
         <hr>
 
         <!-- TABLA FLUJO DE TRABAJO -->
-        <section class="workflow">
             <h2>Flujo de Trabajo</h2>
             <article>
-                <table border="1">
+                <div class="contenido">
+                    <table border="1">
                     <thead>
-                        <tr>
+                        <tr class="Linea1">
                             <th><input type="checkbox"></th>
                             <th>Elemento</th>
                             <th>Persona</th>
@@ -89,37 +82,40 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr class="Linea2">
                             <td><input type="checkbox"></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Tarea 1</td>
+                            <td><img src="imagenes/Imagen1FlujoTrabjo.jpg" alt="" width="80" height="40"></td>
+                            <td class="Estado">Listo</td>
+                            <td class="Propiedad">Alta</td>
+                            <td><label for="combustible"></label>
+                             <meter id="combustible" min="0" max="100" value="100" low="30" optimum="80"></meter></td>
+                            <td>Junio 15</td>
                         </tr>
-                        <tr>
+                        <tr class="Linea3">
                             <td><input type="checkbox"></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Tarea 2</td>
+                            <td><img src="imagenes/Imagen2FlujoTrabajo.jpg" alt="" width="80" height="60"></td>
+                            <td class="Estado2">Pendiente</td>
+                            <td class="Propiedad2">Media</td>
+                            <td><label for="combustible"></label>
+                             <meter id="combustible" min="0" max="100" value="30" low="30" optimum="80"></meter></td>
+                            <td>Junio 15</td>
                         </tr>
-                        <tr>
+                        <tr class="Linea4">
                             <td><input type="checkbox"></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td>Tarea 3</td>
+                            <td><img src="imagenes/Imagen3FlujoTrabajo.jpg" alt="" width="80" height="60"></td>
+                            <td class="Estado3">Incompleto</td>
+                            <td class="Propiedad3">Baja</td>
+                            <td><label for="combustible"></label>
+                            <meter id="combustible" min="0" max="100" value="60" low="30" optimum="80"></meter></td>
+                            <td>Junio 15</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </article>
-        </section>
     </main>
 </body>
 </html>

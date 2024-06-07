@@ -1,0 +1,282 @@
+body {
+    margin-left: 160px;
+    background-color: #EFFEFC;
+}
+
+/*DISEÑO MENU LATERAL (ESTILOS DEL HOME, AZAEL)*/
+.MenuLateral {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #03312A;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.MenuLateral a{
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: justify;
+}
+
+.MenuLateral a:hover{
+    color: none;
+    font-weight: 700;
+    background-color: #207468;
+    border-radius: 10px;
+}
+
+.MenuLateral i{
+    margin-right: 5px;
+}
+
+/*DISEÑO BARRA DE BUSQUEDA*/
+.container {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+}
+.container input {
+    border: none;
+    flex-grow: 1;
+    margin-right: 10px;            
+}
+
+/*DISEÑO BOTONES NOTIFICACION, CONFIGURACION Y PERFIL (ESTILOS DEL HOME, AZAEL)*/
+.top-buttons {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+/*DISENO ACCESO RAPIDO (ESTILOS DEL HOME, AZAEL)*/
+.quick-access {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .box-Nomina{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #3C7CAB;
+  }
+  
+  .box-Reclutamiento{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #3CAB9A;
+  }
+  
+  .box-Asistencia{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #ABA63C;
+  }
+
+  .box-Desempeno{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #AB3C3C;
+  }
+
+  .box:hover {
+    background-color: #ddd;
+  }
+  
+  .box h2 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+/*DISEÑO DE LA TABLA DE FLUJO DE TRABAJO (ESTILOS DEL HOME, AZAEL)*/
+table {
+    background-color: white;
+}
+
+.Linea1 {
+    border-left: 20px solid #1E96DA;
+}
+
+.Linea2 {
+    border-left: 20px solid #1E96DA;
+}
+
+.Linea3 {
+    border-left: 20px solid #1E96DA;
+}
+
+.Linea4 {
+    border-left: 20px solid #1E96DA;
+}
+
+.contenido {
+    width: 80%;
+    margin: 20px auto;
+}
+.contenido table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.contenido th, .contenido td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+.Estado {
+    background-color: #6DD16B;
+}
+
+.Estado2 {
+    background-color: #F45959;
+}
+
+.Estado3 {
+    background-color: #F9B551;
+}
+
+.Propiedad {
+    background-color: #F45959;
+}
+
+.Propiedad2 {
+    background-color: #F9B551;
+}
+
+.Propiedad3 {
+    background-color: #6DD16B;
+}
+
+/* DISEÑO BOTONES, NOTIFICACION, CONFIGURACION Y PERFIL (ESTILOS DE SUBAREA METAS, RENDIMIENTO, AZAEL) */
+#top-buttons {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+/* DISEÑO TARJETAS (ESTILOS DE SUBAREA METAS, RENDIMIENTO, AZAEL) */
+#container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.contenido {
+    text-align: justify;
+}
+
+.card {
+    width: 100%;
+    margin: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+#meta1 {
+    /* background-size: cover; */
+    /* background-image: url(../imagenes/meta1.jpeg); */
+    width: 100%;
+    height: 100%;
+}
+
+#meta2 {
+    width: 100%;
+    height: 100%;
+}
+
+#meta3 {
+    width: 100%;
+    height: 100%;
+}
+
+/* DISEÑO DE SUBAREA DE DESEMPEÑO DEL EMPLEADO (AZAEL) */
+.Desempeño {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 190px;
+  }
+  
+  .contacto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contacto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+/* DISEÑO SUBAREA RIESGOS LABORALES, AREA SEGURIDAD (AZAEL) */
+.caja1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: justify;
+}
