@@ -1,0 +1,613 @@
+/*COLORES CON VARIABLES*/
+:root{
+    --Background: #EFFEFC;
+    --MenuLateral: #03312A;
+    --AreasSeleccionadasMenu: #207468;
+}
+
+
+
+
+
+
+body {
+    background-color: #EFFEFC;
+    overflow: hidden;
+}
+
+/*DISEÑO MENU LATERAL (ESTILOS DEL HOME, AZAEL)*/
+.MenuLateral {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--MenuLateral);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.MenuLateral a{
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: justify;
+}
+
+.MenuLateral a:hover{
+    color: none;
+    font-weight: 700;
+    background-color: #207468;
+    border-radius: 10px;
+}
+
+.MenuLateral i{
+    margin-right: 5px;
+} 
+
+
+/*DISEÑO BARRA DE BUSQUEDA*/
+.container {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+}
+.container input {
+    border: none;
+    flex-grow: 1;
+    margin-right: 10px;            
+}
+
+/*DISEÑO BOTONES NOTIFICACION, CONFIGURACION Y PERFIL (ESTILOS DEL HOME, AZAEL)*/
+.top-buttons {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+/*DISENO ACCESO RAPIDO (ESTILOS DEL HOME, AZAEL)*/
+.quick-access {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .box-Nomina{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #3C7CAB;
+  }
+  
+  .box-Reclutamiento{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #3CAB9A;
+  }
+  
+  .box-Asistencia{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #ABA63C;
+  }
+
+  .box-Desempeno{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #AB3C3C;
+  }
+
+  .box:hover {
+    background-color: #ddd;
+  }
+  
+  .box h2 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+/*DISEÑO DE LA TABLA DE FLUJO DE TRABAJO (ESTILOS DEL HOME, AZAEL)*/
+table {
+    background-color: white;
+}
+
+.Linea1 {
+    border-left: 20px solid #1E96DA;
+}
+
+.Linea2 {
+    border-left: 20px solid #1E96DA;
+}
+
+.Linea3 {
+    border-left: 20px solid #1E96DA;
+}
+
+.Linea4 {
+    border-left: 20px solid #1E96DA;
+}
+
+.contenido {
+    width: 80%;
+    margin: 20px auto;
+}
+.contenido table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.contenido th, .contenido td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+.Estado {
+    background-color: #6DD16B;
+}
+
+.Estado2 {
+    background-color: #F45959;
+}
+
+.Estado3 {
+    background-color: #F9B551;
+}
+
+.Propiedad {
+    background-color: #F45959;
+}
+
+.Propiedad2 {
+    background-color: #F9B551;
+}
+
+.Propiedad3 {
+    background-color: #6DD16B;
+}
+
+/* DISEÑO BOTONES, NOTIFICACION, CONFIGURACION Y PERFIL (ESTILOS DE SUBAREA METAS, RENDIMIENTO, AZAEL) */
+#top-buttons {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+/* DISEÑO TARJETAS (ESTILOS DE SUBAREA METAS, RENDIMIENTO, AZAEL) */
+#container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.contenido {
+    text-align: justify;
+}
+
+.card {
+    width: 100%;
+    margin: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+#meta1 {
+    /* background-size: cover; */
+    /* background-image: url(../imagenes/meta1.jpeg); */
+    width: 100%;
+    height: 100%;
+}
+
+#meta2 {
+    width: 100%;
+    height: 100%;
+}
+
+#meta3 {
+    width: 100%;
+    height: 100%;
+}
+
+/* DISEÑO DE SUBAREA DE DESEMPEÑO DEL EMPLEADO (AZAEL) */
+.Desempeño {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 190px;
+  }
+  
+  .contacto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contacto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+/* DISEÑO SUBAREA RIESGOS LABORALES, AREA SEGURIDAD (AZAEL) */
+.caja1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    background: url(../imagenes/Imagen1RiesgosLaborales.png) no-repeat 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.caja2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    background: url(../imagenes/Imagen2RiesgosLaborales.png) no-repeat 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.caja3 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    background: url(../imagenes/Imagen3RiesgosLaborales.png) no-repeat 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.cuadro-verde {
+    background-color: #6DD16B;
+    width: 1100px;
+    height: 200px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #000;
+    align-self: center;
+  }
+  
+  .cuadro-verde h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+  }
+
+/*====================================================================================LOADING Y LOGIN================================================================*/
+/*ESTILOS GENERALES - MARIO*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/*LOADING PAGE - MARIO*/
+/*BACKGROUND - COLORES DE FONDO*/
+#fondo{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right,#2EC8B2, #0e4b42);
+    
+}
+/*CAMBIAR POSICION DE CAJAS CON LOS ELEMENTOS Y ITEMS - MARIO*/
+#colorDfondo{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/*POSICIONANDO EL CONTENIDO DENTRO DE LA CAJA, PARA QUE ESTE CENTRADO - MARIO*/
+#containerP{
+    display: flex;
+    width: 30%;
+    height: 45%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+   
+}
+/*DANDOLE ESTILOS AL BOTON - MARIO*/
+[type="button"]{
+    margin-top: 50px;
+    padding: 20px;
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*CUBOS DEL LOADING - MARIO */
+
+.cubos{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+.Cubo1{
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    width: 15vw;
+}
+
+.Cubo2{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 15vw;
+}
+
+.Cubo3 {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 20vw;
+}
+
+.Cubo4 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 20vw;
+}
+
+/*ESTRELLAS DEL LOADING - MARIO*/
+.estrellas{
+    width: 100%;
+    height: 100%;
+}
+
+.estrellas1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw
+}
+
+.estrellas2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw
+}
+
+.estrellas3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw
+}
+
+/*LOGIN - MARIO*/
+
+#containerPlogin{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    width: 30%;
+    height: 70%;
+    z-index: 1;
+}
+
+#containerForm{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 55%;    
+}
+
+#containerForm h2{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(185, 185, 185);
+   color: #ffffff
+}
+
+[id="usuario"],
+[id="password"]{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    box-shadow: 0px 1px 2px rgb(177, 177, 177);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*CUBOS DEL LOGIN - MARIO*/
+
+.Cubo1L {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    width: 15vw;
+}
+
+.Cubo2L {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 15vw;
+}
+
+.Cubo3L {
+    position: absolute;
+    bottom: 65%;
+    right: -5%;
+    width: 15vw;
+}
+
+.Cubo4L {
+    position: absolute;
+    top: 70%;
+    left: -5%;
+    width: 15vw;
+}
+
+/*ESTRELLAS DEL LOGIN - MARIO*/
+
+.estrellas1L{
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    width: 1vw
+}
+
+.estrellas2L {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    width: 1vw
+}
+
+.estrellas3L {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 1vw
+}
+
+#page1, #page2{
+    transition: opacity 1s ease-in-out;
+}
+
+#page2{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/*===============================EMPLEADOS-MARIO=======================================*/
+
+#empleados_B{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Background) ;
+    
+}
+
+#areaDconfiguracion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 88%;
+    height: 10%;
+    border-bottom: 1px solid #AEA3A3;
+    position: fixed;
+    left: 12%;
+    z-index: 1;
+}
+
+#areaDconfiguracion h3{
+    width: 70%;
+}
+
+#usuario_P img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#barraDnavegacion{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    background-color: var(--MenuLateral);
+    width: 12%;
+    height: 100%;
+}
+
+#barraDnavegacion img:first-child{
+    text-align: center;
+}
+

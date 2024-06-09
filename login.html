@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/funciones.js"></script>
 </head>
-<body>
+<body id="fondo">
+<div id="colorDfondo">
     <header>
         <!-- Cajas de background -->
-        <div class="cajas">
-            <p class="caja caja1"></p>
-            <p class="caja caja2"></p>
-            <p class="caja caja3"></p>
-            <p class="caja caja4"></p>
+        <div class="cubos">
+            <img src="/imagenes/Cubo1.svg" alt="Cubo1" class="Cubo1">
+            <img src="/imagenes/Cubo2.svg" alt="Cubo2" class="Cubo2">
+            <img src="/imagenes/Cubo2.svg" alt="Cubo3" class="Cubo3">
+            <img src="/imagenes/Cubo2.svg" alt="Cubo4" class="Cubo4">
         </div>
         <div id="estrellas">
-            <p class="estrella estrella1"></p>
-            <p class="estrella estrella2"></p>
-            <p class="estrella estrella3"></p>
+            <img src="/imagenes/Estrellas.svg" alt="Estrellas" class="estrellas1 estrellas1L">
+            <img src="/imagenes/Estrellas.svg" alt="Estrellas" class="estrellas2 estrellas2L">
+            <img src="/imagenes/Estrellas.svg" alt="Estrellas" class="estrellas3 estrellas3L">
         </div>
     </header>
-    <main>
+    <main id="containerPlogin">
         <!-- Formulario -->
+    <div id="containerForm">
         <h2>Inicio sesión</h2>
         <form action="#">
-            <label for="usuario">Usuario:</label>
             <input type="text" title="user" id="usuario" name="usuario" required>
-            <label for="password">Contraseña:</label>
             <input type="password" title="contrasena" id="password" name="password" required>
-            <input type="submit" title="botondeinicio" name="boton" id="boton" value="Acceder">
+            <input type="button" title="botondeinicio" name="boton" id="boton" value="Acceder">
         </form>
+    </div>
     </main>
+</div>
 </body>
 </html>
