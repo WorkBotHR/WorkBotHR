@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="gestion humana, HTML, html5, software, css, js, proyecto, empresa">
     <meta name="description" content="Optimice la gestión del talento humano y impulse el éxito de su organización con nuestro innovador proyecto de gestión humana.">
-    <title>Human Intelligence Resources - rendimiento / Desempeño</title>
+    <title>Human Intelligence Resources - Horarios /  Asistencia</title>
     <link rel="stylesheet" href="/css/estilos.css">
     <script src="/js/menu_lateral.js"></script>
+    <script src="/js/horario.js"></script>
 </head>
 <body>
     <!-- BOTONES PARTE SUPERIOR DEL HOME -->
@@ -54,11 +55,11 @@
                 <a href="rendimiento.html"><img src="/assets/rendimiento.svg">Rendimiento</a>
                 <ul class="submenu">
                     <li><a href="rendimiento.html">Metas</a></li>
-                    <li><a href="#">Desempeño</a></li>
+                    <li><a href="desempeño.html">Desempeño</a></li>
                 </ul>
             </li>
             <li class="main-area">
-                <a href="horarios.html"><img src="/assets/horarios.svg">Horario</a>
+                <a href="#"><img src="/assets/horarios.svg">Horario</a>
                 <ul class="submenu">
                     <li><a href="horarios.html">Asistencia</a></li>
                     <li><a href="horario_empleado.html">Horarios de Empleados</a></li>
@@ -74,71 +75,53 @@
         </ul>
     </nav>
 
-    <!-- DESEMPEÑO DE LOS EMPLEADOS CON SUS RESPECTIVAS INFORMACIONES -->
-    <div class="business-card">
-        <div class="icon">
-            <img src="imagenes/ImagenPersona-Desempeño.png" alt="Person Icon">
-        </div>
-        <div class="info">
-            <h2>Jose Perez</h2>
-            <p><i class="fa-solid fa-user"></i> Marketing - Psicólogo</p>
-            <p><i class="fa-solid fa-at"></i> Email: Prueba08@gmail.com</p>
-            <p><i class="fa-solid fa-file"></i> Matricula: 725382</p>
-        </div>
-        <div class="performance">
-                <span><strong>Desempeño en el área</strong></span>
-                <label for="combustible"></label>
-                <meter id="combustible" min="0" max="100" value="85" low="30" optimum="80"></meter>
-            </div>
-        </div>
+    <!-- Titulo -->
+     <h1><img src="/assets/horarios.svg" alt=""> Asistencia de Empleados</h1>
 
-        <div class="icon">
-            <img src="imagenes/ImagenPersona-Desempeño.png" alt="Person Icon">
-        </div>
-        <div class="info">
-            <h2>Jose Perez</h2>
-            <p><i class="fa-solid fa-user"></i> Marketing - Psicólogo</p>
-            <p><i class="fa-solid fa-at"></i> Email: Prueba08@gmail.com</p>
-            <p><i class="fa-solid fa-file"></i> Matricula: 725382</p>
-        </div>
-        <div class="performance">
-                <span><strong>Desempeño en el área</strong></span>
-                <label for="combustible"></label>
-                <meter id="combustible" min="0" max="100" value="65" low="30" optimum="80"></meter>
-            </div>
-        </div>
-
-        <div class="icon">
-            <img src="imagenes/profile-user.jpeg" alt="Person Icon">
-        </div>
-        <div class="info">
-            <h2>Jose Perez</h2>
-            <p><i class="fa-solid fa-user"></i> Marketing - Psicólogo</p>
-            <p><i class="fa-solid fa-at"></i> Email: Prueba08@gmail.com</p>
-            <p><i class="fa-solid fa-file"></i> Matricula: 725382</p>
-        </div>
-        <div class="performance">
-                <span><strong>Desempeño en el área</strong></span>
-                <label for="combustible"></label>
-                <meter id="combustible" min="0" max="100" value="45" low="30" optimum="80"></meter>
-            </div>
-        </div>
-
-        <div class="icon">
-            <img src="imagenes/profile-user.jpeg" alt="Person Icon">
-        </div>
-        <div class="info">
-            <h2>Jose Perez</h2>
-            <p><i class="fa-solid fa-user"></i> Marketing - Psicólogo</p>
-            <p><i class="fa-solid fa-at"></i> Email: Prueba08@gmail.com</p>
-            <p><i class="fa-solid fa-file"></i> Matricula: 725382</p>
-        </div>
-        <div class="performance">
-                <span><strong>Desempeño en el área</strong></span>
-                <label for="combustible"></label>
-                <meter id="combustible" min="0" max="100" value="25" low="30" optimum="80"></meter>
-            </div>
-        </div>
+    <!-- Ordenar por -->
+    <div class="container">
+        <label for="orderSelect">Ordenar por:</label>
+        <select id="orderSelect" onchange="sortTable()">
+            <option value="0">Fecha</option>
+            <option value="1">Matrícula</option>
+            <option value="2">Nombre</option>
+            <option value="3">Hora de Entrada</option>
+            <option value="4">Hora de Salida</option>
+            <option value="5">Total de Horas Trabajadas</option>
+        </select>
     </div>
+
+        <table id="dataTable" border="1">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Matrícula</th>
+                    <th>Nombre</th>
+                    <th>Hora de Entrada</th>
+                    <th>Hora de Salida</th>
+                    <th>Total de Horas Trabajadas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-06-08</td>
+                    <td>ABC123</td>
+                    <td>Juan Pérez</td>
+                    <td>08:00</td>
+                    <td>17:00</td>
+                    <td>9 horas</td>
+                </tr>
+                <tr>
+                    <td>2024-06-07</td>
+                    <td>XYZ789</td>
+                    <td>Ana García</td>
+                    <td>09:00</td>
+                    <td>18:00</td>
+                    <td>9 horas</td>
+                </tr>
+                <!-- Agrega más filas según sea necesario -->
+            </tbody>
+        </table>
+
 </body>
 </html>

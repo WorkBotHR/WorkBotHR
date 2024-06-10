@@ -1,35 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reclutamiento</title>
+    <meta name="keywords" content="gestion humana, HTML, html5, software, css, js, proyecto, empresa">
+    <meta name="description" content="Optimice la gestión del talento humano y impulse el éxito de su organización con nuestro innovador proyecto de gestión humana.">
+    <title>Human Intelligence Resources - Reclutamiento</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+    <script src="/js/menu_lateral.js"></script>
 </head>
 <body>
-    <!--CABECERA-->
+    <!-- BOTONES PARTE SUPERIOR DEL HOME -->
     <header>
-        <button type="button" class="Boton-Notificaciones">
-            <span><i class="fa-regular fa-bell"></i></span>
-        </button>
-        <button type="button" class="Boton-Configuracion">
-            <span><i class="fa-solid fa-gear"></i></span>
-        </button>
-        <button type="button" class="Boton-Perfil">
-            <span><i class="fa-regular fa-user"></i></span>
-        </button>
+        <div class="top-buttons">
+            <type="button" class="Boton-Notificaciones">
+                <span><img src="/assets/notificacion.svg"></span>
+            </type>
+            <type="button" class="Boton-Configuracion">
+                <span><img src="/assets/conf.svg" alt=""></span>
+            </type>
+            <type="button" class="Boton-Perfil">
+                <span><img src="imagenes/perfil.PNG" width="50" height="50"></span>
+            </type>
+        </div>
     </header>
-    <!--MENU DE LATERAL-->
+    <br>
+
+    <!-- BOTONES PARTE SUPERIOR DEL HOME -->
     <header>
-        <nav class="MenuLateral">
-            <a href="#"><i class="fa-solid fa-house"></i>Home</a>
-            <a href="#"><i class="fa-solid fa-users"></i>Empleados</a>
-            <a href="#"><i class="fa-solid fa-file-invoice"></i>Gestion de talento</a>
-            <a href="#"><i class="fa-solid fa-chart-simple"></i>Rendimiento</a>
-            <a href="#"><i class="fa-solid fa-calendar-days"></i>Horario</a>
-            <a href="#"><i class="fa-solid fa-shield-halved"></i>Politica</a>
-        </nav>
+        <div class="top-buttons">
+            <type="button" class="Boton-Notificaciones">
+                <span><img src="/assets/notificacion.svg"></span>
+            </type>
+            <a href="configuracion_Perfil_Usuario.html">
+                <type="button" class="Boton-Configuracion">
+                    <span><img src="/assets/conf.svg" alt=""></span>
+                </type>
+            </a>
+            <type="button" class="Boton-Perfil">
+                <span><img src="imagenes/perfil.PNG" width="50" height="50"></span>
+            </type>
+        </div>
     </header>
-    <!--MENU DE LATERAL-->
+    <br>
+
+    <!-- MENU LATERAL -->
+    <nav class="menuLateral">
+        <div class="logo">
+            <a href="index.html"><img src="imagenes/logo.PNG" alt="Logo" width="150" height="150"></a>
+        </div>
+        <ul>
+            <li><a href="index.html" id="home"><img src="/assets/home.svg">Inicio</a></li>
+            <li class="main-area">
+                <a href="empleados.html"><img src="/assets/empleado.svg">Empleados</a>
+                <ul class="submenu empleados">
+                    <li><a href="nomina.html">Nómina</a></li>
+                    <li><a href="beneficios.html">Beneficios</a></li>
+                </ul>
+            </li>
+            <li class="main-area">
+                <a href="gestiondetalentos.html"><img src="/assets/talento.svg">Gestión de Talento</a>
+                <ul class="submenu">
+                    <li><a href="#">Reclutamiento</a></li>
+                    <li><a href="seleccion_de_personal.html">Selección del Personal</a></li>
+                    <li><a href="capacitacion.html">Capacitación</a></li>
+                </ul>
+            </li>
+            <li class="main-area">
+                <a href="rendimiento.html"><img src="/assets/rendimiento.svg">Rendimiento</a>
+                <ul class="submenu">
+                    <li><a href="rendimiento.html">Metas</a></li>
+                    <li><a href="desempeño.html">Desempeño</a></li>
+                </ul>
+            </li>
+            <li class="main-area">
+                <a href="horarios.html"><img src="/assets/horarios.svg">Horario</a>
+                <ul class="submenu">
+                    <li><a href="horarios.html">Asistencia</a></li>
+                    <li><a href="horario_empleado.html">Horarios de Empleados</a></li>
+                </ul>
+            </li>
+            <li class="main-area">
+                <a href="politica.html"><img src="/assets/politicas.svg">Política</a>
+                <ul class="submenu">
+                    <li><a href="politica.html">Riesgos Laborales</a></li>
+                    <li><a href="seguridad.html">Seguridad</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
     <main>
         <!--HEADER A LO PRINCIPAL DEL CONTENEDOR-->
         <div id="containerHeader">
