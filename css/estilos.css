@@ -1,9 +1,11 @@
 /*DISEÑO MENU LATERAL (ESTILOS DEL HOME, AZAEL)*/
 /* Auditoria Menu Lateral - Ambar */
 
+@import url(/css/reset.css);
+
 @font-face {
-    font-family:"inter","san-serif";
-    src: url(./fuentes/Inter-VariableFont_slnt\,wght.ttf);
+    font-family:'inter';
+    src: url(/fuentes/Inter-VariableFont_slnt\,wght.ttf);
 }
 
 :root{
@@ -20,6 +22,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'inter';
 }
 
 body {
