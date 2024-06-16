@@ -75,24 +75,111 @@
     </nav>
 
     <!-- tabla -->
-    <input type="text" id="searchInput" placeholder="Search by Matricula, Empleado, Departamento, Fecha, Bono, or Biatico">
+    <div class="beneficios">
+        <section class="tabla">
+            <div class="buttons">
+                <button class="filter-btn">TODO</button>
+                <div class="buscar">
+                    <input type="text" placeholder="BUSCADOR..">
+                </div>
+            </div>
+            <table id="benefitsTable">
+                <thead>
+                    <tr>
+                        <th>Matricula</th>
+                        <th>Empleado</th>
+                        <th>Departamento</th>
+                        <th>Fecha</th>
+                        <th>Bono</th>
+                        <th>Bonificación</th>
+                        <th>Biatico</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5987452</td>
+                        <td>Rodolfo Agustín</td>
+                        <td>Ventas</td>
+                        <td>21/06/24</td>
+                        <td>$500.00</td>
+                        <td><span class="approved">APROBADO</span></td>
+                        <td>COMIDA</td>
+                    </tr>
+                    <tr>
+                        <td>8957156</td>
+                        <td>Federico Rivera</td>
+                        <td>Servicio al cliente</td>
+                        <td>21/06/24</td>
+                        <td>$1000.00</td>
+                        <td><span class="not-approved">NO APROBADO</span></td>
+                        <td>TRANSPORTE</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <!-- Más filas según sea necesario -->
+                </tbody>
+            </table>
+        </section>
+        <section class="form-section">
+            <h2>Formulario Vacaciones Aprobadas <i class="eye-icon">👁️</i></h2>
+            <div class="form-buttons">
+                <button class="new-record-btn">+ NUEVO REGISTRO</button>
+                <button class="excel-btn">📊 EMPLEADOS POR EXCEL</button>
+            </div>
+            <section class="comment-section">
+                <h2>comentario rápido</h2>
+                <div class="comment-box">
+                    <i class="thumb-icon">👍</i>
+                    <div>
+                        <p>Buen trabajo con las asignaciones de este mes!</p>
+                        <span>Sasha lee</span>
+                    </div>
+                </div>
+            </section>
+        </section>
+        
+        <div class="pagination-1">
+            <span>PÁGINAS</span>
+            <button class="active-1">1</button>
+            <button>2</button>
+            <!-- Más botones según sea necesario -->
+        </div>
 
-    <table id="benefitsTable">
-        <thead>
-            <tr>
-                <th>Matricula</th>
-                <th>Empleado</th>
-                <th>Departamento</th>
-                <th>Fecha</th>
-                <th>Bono</th>
-                <th>Biatico</th>
-            </tr>
-        </thead>
-        <tbody>
-            </tbody>
-    </table>
-
-
+    </div>
     
 </body>
 </html>

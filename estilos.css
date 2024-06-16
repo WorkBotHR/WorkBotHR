@@ -1,0 +1,1608 @@
+@import url(/WorkBotHR/css/reset.css);
+
+
+@font-face {
+    font-family: "inter";
+    src: url(/WorkBotHR/fuentes/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+
+
+
+/*COLORES CON VARIABLES*/
+:root{
+    --Background: #EFFEFC;
+    --MenuLateral: #03312A;
+    --AreasSeleccionadasMenu: #207468;
+}
+
+
+/*DISEÑO MENU LATERAL (ESTILOS DEL HOME, AMBAR)*/
+body {
+    background-color: #EFFEFC;
+    overflow: hidden;
+}
+
+.menuLateral {
+    height: 100%;
+    width: 19%;
+    margin: auto;
+    position:fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #03312A;
+    overflow: hidden;
+    padding-top: 25px;
+}
+
+.menuLateral ul {
+    padding-left: 0;
+}
+
+.menuLateral li {
+    list-style: none;
+}
+
+.menuLateral a {
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    height: 7%;
+
+}
+
+.menuLateral i {
+    margin-right: 10px;
+}
+
+.submenu {
+    display: none;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: rgba(32, 116, 104, 0.7);
+    border-radius: 0 0 10px 10px;
+}
+
+.submenu a{
+    line-height: 50px
+}
+
+.submenu a:hover{
+    background-color: #207468;
+    border-radius: 10px
+}
+
+.submenu.show {
+    display: block;
+}
+
+.submenu a {
+    font-size: 18px;
+    margin-right: 10px;
+    margin-left: 10px;
+    z-index: 6;
+}
+
+.main-area.submenu {
+    z-index: 5;
+    display: block;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.main-area.active > a {
+    background-color: #207468;
+    border-radius: 10px;
+}
+
+.main-area:hover > a {
+    background-color: #207468;
+    border-radius: 10px;
+}
+
+#home {
+    border-radius: 10px;
+}
+
+#home.active{
+    background-color: none;
+}
+
+#home:hover {
+    background-color: #3CDAC3;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 150px;
+    height: 150px;
+}
+
+/*DISEÑO BARRA DE BUSQUEDA*/
+.container {
+    display: flex;
+    align-items: center;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 10px;
+}
+.container input {
+    border: none;
+    flex-grow: 1;
+    margin-right: 10px;            
+}
+
+/*DISEÑO BOTONES NOTIFICACION, CONFIGURACION Y PERFIL (ESTILOS DEL HOME, AZAEL)*/
+.top-buttons {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+/*DISENO ACCESO RAPIDO (ESTILOS DEL HOME, AZAEL)*/
+.quick-access {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .box-Nomina{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #3C7CAB;
+  }
+  
+  .box-Reclutamiento{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #3CAB9A;
+  }
+  
+  .box-Asistencia{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #ABA63C;
+  }
+
+  .box-Desempeno{
+    width: 170px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-right: 50px solid #AB3C3C;
+  }
+
+  .box:hover {
+    background-color: #ddd;
+  }
+  
+  .box h2 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+  }
+
+
+/*DISEÑO DE LA TABLA DE FLUJO DE TRABAJO (ESTILOS DEL HOME, AZAEL)*/
+table {
+    background-color: white;
+}
+
+.Linea1 {
+    border-left: 20px solid #1E96DA;
+}
+
+.Linea2 {
+    border-left: 20px solid #1E96DA;
+}
+
+.Linea3 {
+    border-left: 20px solid #1E96DA;
+}
+
+.Linea4 {
+    border-left: 20px solid #1E96DA;
+}
+
+.contenido {
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    
+    margin: 20px auto;
+}
+.contenido table {
+   
+    border-collapse: collapse;
+}
+.contenido th, .contenido td {
+    border: 1px solid #dee2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+.Estado {
+    background-color: #6DD16B;
+}
+
+.Estado2 {
+    background-color: #F45959;
+}
+
+.Estado3 {
+    background-color: #F9B551;
+}
+
+.Propiedad {
+    background-color: #F45959;
+}
+
+.Propiedad2 {
+    background-color: #F9B551;
+}
+
+.Propiedad3 {
+    background-color: #6DD16B;
+}
+
+/* DISEÑO BOTONES, NOTIFICACION, CONFIGURACION Y PERFIL (ESTILOS DE SUBAREA METAS, RENDIMIENTO, AZAEL) */
+#top-buttons {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+/* DISEÑO TARJETAS (ESTILOS DE SUBAREA METAS, RENDIMIENTO, AZAEL) */
+#container {
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+}
+
+.contenido {
+    text-align: justify;
+}
+
+.card {
+    width: 100%;
+    margin: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+#meta1 {
+    /* background-size: cover; */
+    /* background-image: url(../imagenes/meta1.jpeg); */
+    width: 100%;
+    height: 100%;
+}
+
+#meta2 {
+    width: 100%;
+    height: 100%;
+}
+
+#meta3 {
+    width: 100%;
+    height: 100%;
+}
+
+/* DISEÑO DE SUBAREA DE DESEMPEÑO DEL EMPLEADO (AZAEL) */
+.Desempeño {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 190px;
+  }
+  
+  .contacto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+  }
+  
+  h2 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contacto img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+/* DISEÑO SUBAREA RIESGOS LABORALES, AREA SEGURIDAD (AZAEL) */
+.caja1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    background: url(../imagenes/Imagen1RiesgosLaborales.png) no-repeat 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.caja2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    background: url(../imagenes/Imagen2RiesgosLaborales.png) no-repeat 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.caja3 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    background: url(../imagenes/Imagen3RiesgosLaborales.png) no-repeat 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.cuadro-verde {
+    background-color: #6DD16B;
+    width: 1100px;
+    height: 200px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #000;
+    align-self: center;
+  }
+  
+  .cuadro-verde h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+  }
+
+  /* DISENO SUBAREA DE SEGURIDAD, AREA DE POLITICA */
+.caja0 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* DISEÑO SUBAREA SELECCION DE PERSONAL, AREA GESTION DE TALENTO (AZAEL) */
+.emailReclutamiento {
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.SeleccionDePersonal {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 660px;
+    position: relative;
+}
+
+.ImagenBuzon {
+    float: right;
+    position: absolute;
+    top: 100px;
+    right: 60px;
+} 
+
+.ImagenReclutamiento {
+    float: right;
+    position: absolute;
+    top: 100px;
+    right: 550px;
+}
+
+.acceso-reclutamiento {
+    float: right;
+    position: absolute;
+    right: 540px;
+}
+
+.ImagenSeleccionPersonal {
+    float: right;
+    position: absolute;
+    top: 100px;
+    right: 410px;
+}
+
+.acceso-selecciondepersonal {
+    float: right;
+    position: absolute;
+    right: 370px;
+}
+
+.ImagenCapacitacion {
+    float: right;
+    position: absolute;
+    top: 100px;
+    right: 260px;
+}
+
+.acceso-capacitacion {
+    float: right;
+    position: absolute;
+    right: 258px;
+}
+
+
+.cuadro1 {
+    background-color: #96D5E9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 500px;
+}
+
+.curriculum1 {
+    float: right;
+    position: absolute;
+    right: 850px;
+    top: 210px;
+    
+}
+
+.curriculum2 {
+    float: right;
+    position: absolute;
+    right: 850px;
+    top: 310px;
+}
+
+.curriculum3 {
+    float: right;
+    position: absolute;
+    right: 850px;
+    top: 410px;
+}
+
+.curriculum4 {
+    float: right;
+    position: absolute;
+    right: 850px;
+    top: 510px;
+}
+
+.curriculum5 {
+    float: right;
+    position: absolute;
+    right: 850px;
+    top: 610px;
+}
+
+.curriculum6 {
+    float: right;
+    position: absolute;
+    right: 850px;
+    top: 710px;
+}
+
+.cuadro2 {
+    background-color: #96D5E9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 500px;
+}
+
+.cuadro3 {
+    background-color: #96D5E9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 500px;
+}
+
+.cuadro4 {
+    background-color: #96D5E9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 500px;
+}
+
+.cuadro5 {
+    background-color: #96D5E9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 500px;
+}
+
+.cuadro6 {
+    background-color: #96D5E9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 500px;
+}
+
+.lineavertical{
+    float: right;
+    position: absolute;
+    right: 480px;
+    top: 177px;
+    transform: translate(-50%, 0);
+  }
+
+.Entrevistas h2 {
+    float: right;
+    position: absolute;
+    right: 300px;
+    top: 190px;
+}
+
+.cuadro7 {
+    background-color: #96D5E9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 500px;
+    float: right;
+    position: absolute;
+    top: 240px;
+    right: -300px;
+}
+
+.cuadro8 {
+    background-color: #96D5E9;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 500px;
+    float: right;
+    position: absolute;
+    top: 340px;
+    right: -300px;
+}
+
+.boton-aceptado1 {
+    float: right;
+    position: absolute;
+    right: 700px;
+    top: 210px;
+}
+
+.boton-basura1 {
+    float: right;
+    position: absolute;
+    right: 600px;
+    top: 210px;
+}
+
+.boton-aceptado2 {
+    float: right;
+    position: absolute;
+    right: 700px;
+    top: 310px;
+}
+
+.boton-basura2 {
+    float: right;
+    position: absolute;
+    right: 600px;
+    top: 310px;
+}
+
+.boton-aceptado3 {
+    float: right;
+    position: absolute;
+    right: 700px;
+    top: 410px;
+}
+
+.boton-basura3 {
+    float: right;
+    position: absolute;
+    right: 600px;
+    top: 410px;
+}
+
+.boton-aceptado4 {
+    float: right;
+    position: absolute;
+    right: 700px;
+    top: 510px;
+}
+
+.boton-basura4 {
+    float: right;
+    position: absolute;
+    right: 600px;
+    top: 510px;
+}
+
+.boton-aceptado5 {
+    float: right;
+    position: absolute;
+    right: 700px;
+    top: 610px;
+}
+
+.boton-basura5 {
+    float: right;
+    position: absolute;
+    right: 600px;
+    top: 610px;
+}
+
+.boton-aceptado6 {
+    float: right;
+    position: absolute;
+    right: 700px;
+    top: 710px;
+}
+
+.boton-basura6 {
+    float: right;
+    position: absolute;
+    right: 600px;
+    top: 710px;
+}
+
+/*====================================================================================LOADING Y LOGIN================================================================*/
+
+
+/*LOADING PAGE - MARIO*/
+/*BACKGROUND - COLORES DE FONDO*/
+#fondo{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right,#2EC8B2, #0e4b42);
+    
+}
+/*CAMBIAR POSICION DE CAJAS CON LOS ELEMENTOS Y ITEMS - MARIO*/
+#colorDfondo{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+/*POSICIONANDO EL CONTENIDO DENTRO DE LA CAJA, PARA QUE ESTE CENTRADO - MARIO*/
+#containerP{
+    display: flex;
+    width: 30%;
+    height: 45%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+   
+}
+/*DANDOLE ESTILOS AL BOTON - MARIO*/
+[type="button"]{
+    margin-top: 50px;
+    padding: 20px;
+    width: 180px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/*CUBOS DEL LOADING - MARIO */
+
+.cubos{
+    
+    width: 100%;
+    height: 100%;
+    
+}
+
+.Cubo1{
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    width: 15vw;
+}
+
+.Cubo2{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    width: 15vw;
+}
+
+.Cubo3 {
+    position: absolute;
+    top: 70%;
+    left: 0%;
+    width: 20vw;
+}
+
+.Cubo4 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 20vw;
+}
+
+/*ESTRELLAS DEL LOADING - MARIO*/
+.estrellas{
+    width: 100%;
+    height: 100%;
+}
+
+.estrellas1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw
+}
+
+.estrellas2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw
+}
+
+.estrellas3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1vw
+}
+
+/*LOGIN - MARIO*/
+
+#containerPlogin{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    width: 30%;
+    height: 70%;
+    z-index: 1;
+}
+
+#containerForm{
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 55%;    
+}
+
+#containerForm h2{
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid rgb(197, 197, 197);
+    border-bottom: 1px solid rgb(185, 185, 185);
+   color: #ffffff
+}
+
+[id="usuario"],
+[id="password"]{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    box-shadow: 0px 1px 2px rgb(177, 177, 177);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*CUBOS DEL LOGIN - MARIO*/
+
+.Cubo1L {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    width: 15vw;
+}
+
+.Cubo2L {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 15vw;
+}
+
+.Cubo3L {
+    position: absolute;
+    bottom: 65%;
+    right: -5%;
+    width: 15vw;
+}
+
+.Cubo4L {
+    position: absolute;
+    top: 70%;
+    left: -5%;
+    width: 15vw;
+}
+
+/*ESTRELLAS DEL LOGIN - MARIO*/
+
+.estrellas1L{
+    position: absolute;
+    top: 10%;
+    left: 28%;
+    width: 1vw
+}
+
+.estrellas2L {
+    position: absolute;
+    top: 90%;
+    left: 30%;
+    width: 1vw
+}
+
+.estrellas3L {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    width: 1vw
+}
+
+#page1, #page2{
+    transition: opacity 1s ease-in-out;
+}
+
+#page2{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/*===============================EMPLEADOS-MARIO=======================================*/
+
+#empleados_B{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--Background) ;
+}
+
+#areaDconfiguracion{
+    display: flex;
+    position: relative;
+    left: 10%;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    margin: 0 auto;
+    z-index: 1;
+    box-shadow: 0 0 2px rgb(192, 192, 192);
+
+}
+
+#areaDayuda_general{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    width: 10%;
+    left: 20%;
+
+}
+
+#usuario_P a img{
+    object-fit: contain;
+    height: 100%;
+}
+
+
+/*CONTENDOR contenedorP_empleados*/
+
+#contenedorP_empleados{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    top: 5%;
+    left: 21%;
+    width: 100%;
+    height: 10%;
+    z-index: 2;
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.notificaciones_general{
+    height: 25px;
+}
+
+.configuracion_general{
+    height: 25px;
+}
+
+.areaDayuda, .registros, .buscador_empleados{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo_empleados{
+    position: relative ;
+    top: 8%;
+}
+
+.titulo_empleados h1{
+    background-color: rgba(32, 86, 78, 0.7);
+    border: 4px solid rgba(79, 152, 157, 0.2);
+    text-align: left;
+    width: 75%;
+    position: fixed;
+    bottom: 65%;
+    right: 3%;
+    border-radius: 5px;
+    font-size: 35px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.buscador_empleados input{
+    height: 60%;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 3px rgb(184, 184, 184);
+}
+
+.icon-buscador{
+    position: absolute;
+    bottom: 45%;
+    right: 24.3%;
+}
+
+.icon-nuevoregistro{
+    position: relative;
+    top: 9px;
+    right: 5px;
+    height: 30px;
+}
+
+.icon-empleadosexcel{
+    position: relative;
+    top: 9px;
+    right: 3px;
+    height: 30px;
+}
+
+.areaDayuda{
+    width: 50%;
+}
+
+.areaDayuda select{
+    height: 60%;
+    width: 70%;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 3px 3px rgb(184, 184, 184);
+    border-radius: 10px;
+}
+
+.listaDempleados{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 37%;
+    left: 18%;
+    width: 83%;
+    height: 65%;
+    padding: 10px;
+    background-color: #BEDEFB;
+    border-radius: 15px;
+    overflow: scroll;
+    gap: 10px;
+}
+
+.empleados_P{
+    background-color: #2C7484;
+    width: 40%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+
+.registros a{
+    background-color: #03312A;
+    padding: 10px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+
+.slideThree {
+    width: 80px;
+    height: 26px;
+    background: #333;
+    margin: 20px auto;
+    position: relative;
+    top: 10%;
+    left: 40%;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+.slideThree::after{
+    content: 'OFF';
+    color: #000;
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+    font: 12px/26px Arial,
+    sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, .15);
+}
+
+.slideThree:before {
+      content: 'ON';
+      color: green;
+      position: absolute;
+      left: 10px;
+      z-index: 0;
+      font: 12px/26px Arial, sans-serif;
+      font-weight: bold;
+    }
+    
+label {
+      display: block;
+      width: 43%;
+      height: 80%;
+      cursor: pointer;
+      position: absolute;
+      top: 10%;
+      left: 4%;
+      z-index: 1;
+      background: #fcfff4;
+      background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+      border-radius: 50px;
+      transition: all 0.4s ease;
+      box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+    }
+    input[type=checkbox] {
+      visibility: hidden;
+
+    }
+
+    input[type=checkbox]:checked+label {
+        left: 43px;
+      }
+   
+
+/*=======================================GESTION DE TALENTOS=========================*/
+
+#gestiondetalentos{
+    display: flex;
+    position: absolute;
+    top: 13%;
+    left: 20%;
+    justify-content: center;
+    align-items: center;
+    width: 78%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+#gestiondetalentos h2{
+    position: relative;
+    bottom: 48%;
+    right: 33.5%;
+    height: 5%;
+    width: 30%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: #03312A;
+    box-shadow: 0 2px 1px 1px rgb(231, 231, 231);
+    border-radius: 5px;
+    border-top: none
+}
+
+#contenedorP_gestionDempleado{
+    position: absolute;
+    top: 10%;
+    right: 1%;
+    width: 98%; 
+    height: 30%;
+    background-color: rgba(150, 213, 233, 0.7);
+    border-radius: 15px;
+}
+
+#botones_gestion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.reclutamiento_gestion button {
+    cursor: pointer;
+    background-color: #FF5050;
+    width: 270px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    border: none
+
+}
+
+.selecciondepersonal_gestion button{
+    cursor: pointer;
+    background-color: #F7A62F;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+    border: none
+
+}
+
+.capacitacion_gestion button{
+    cursor: pointer;
+    background-color: #1D9C1A;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    border: none
+}
+
+
+/* nomina-tocayo */
+.tabla {
+    
+    background-color: #DCF0ED;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-left: 20%;
+    max-width: 79%;
+    
+}
+
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: #00796B;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button.active {
+    background-color: #004D40;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-left: 58%;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    background-color: black;
+    color: white;
+    background: url(../imagenes/logos--aws-cloudsearch.svg) 5px 10px #313132 no-repeat; 
+    padding-left: 30px;
+    font-size: 12px;
+    width: 150px;
+}
+
+.table-container {
+    overflow: hidden; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    font-size: 12px;
+}
+table tr {
+    height: 35px; 
+}
+
+
+table th, table td {
+    border: 1px solid #000000;
+    padding: 6px;
+    text-align: left;
+    background-color: #DCF0ED;
+}
+
+table th {
+    background-color: #E0F2F1;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+.table-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 10px;
+}
+
+.table-status.paid {
+    background-color: #00796B;
+}
+
+.table-status.unpaid {
+    background-color: #ffff;
+    color: black;
+}
+
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.pagination button {
+    background-color: #00796B;
+    color: white;
+    border: none;
+    padding: 8px 12px; /* Reduce el padding de los botones de paginación */
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 10px; /* Reduce el tamaño de la fuente de los botones de paginación */
+}
+
+.pagination button.active {
+    background-color: #004D40;
+}
+/* beneficios */
+
+
+.form-section {
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    margin-left: 19%;
+    height: 5%; 
+} 
+
+.form-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+ .eye-icon {
+    cursor: pointer;
+} 
+
+.form-buttons {
+    display: flex;
+    gap: 20px;
+} 
+
+.new-record-btn, .excel-btn {
+    padding: 10px 20px;
+    background-color: #198754;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+} 
+
+ .new-record-btn {
+    background-color: #198754;
+}
+
+.excel-btn {
+    background-color: #28A745;
+}
+
+.comment-section {
+    margin-top: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.comment-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.comment-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #E8F6F3;
+    border-radius: 10px;
+} 
+
+ .comment-box i {
+    font-size: 24px;
+    color: #198754;
+}
+
+.comment-box div {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment-box p {
+    margin: 0;
+}
+
+.comment-box span {
+    font-size: 12px;
+    color: #555555;
+} 
+
+.pagination-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left:  88%;
+    margin-bottom: 100px;
+}
+
+.pagination-1 button {
+    background-color: #00796B;
+    color: white;
+    border: none;
+    padding: 8px 12px; 
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 10px;
+}
+.pagination-1 button.active-1 {
+    background-color: #004D40;
+}
+
+.approved {
+    background-color: #207468;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.not-approved {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.buscar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    margin-left: 80%;
+}
+
+.buscar input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    background-color: black;
+    color: white;
+    background: url(../imagenes/logos--aws-cloudsearch.svg) 5px 10px #313132 no-repeat; 
+    padding-left: 30px;
+    font-size: 12px;
+    width: 150px;
+}
+.form-section,
+.comment-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-buttons,
+.comment-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.new-record-btn,
+.excel-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.new-record-btn:hover, .excel-btn:hover { 
+    background-color: #0056b3;
+}
+
+.comment-box {
+    display: flex;
+    align-items: center;
+}
+
+.comment-box p {
+    margin-left: 15px;
+}
+
+.thumb-icon {
+    font-size: 30px;
+    color: #007bff;
+} 
+
+/* Estilos de paginación */
+
+
+
+
+
+.form-section,.comment-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: 10%;
+}
+
+.form-section > *,.comment-section > * {
+    flex: 1;
+    margin: 10px;
+}
+.form-section > *,.comment-section > * {
+    flex: 1;
+    margin: 10px;
+    width: 45%;
+}
