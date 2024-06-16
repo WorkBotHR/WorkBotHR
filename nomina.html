@@ -75,24 +75,135 @@
     </nav>
 
     <!-- TABLA -->
-    <input type="text" id="search">
-
-    <table id="payrollTable">
-        <thead>
-            <tr>
-                <th>Matricula</th>
-                <th>Empleado</th>
-                <th>Departamento</th>
-                <th>Fecha</th>
-                <th>Horas Extras</th>
-                <th>Sueldo</th>
-                <th>Estado</th>
-            </tr>
-        </thead>
-        <tbody>
+    <div class="tabla">
+        <div class="buttons">
+            <button class="active">TODO</button>
+            <button>PAGADO</button>
+            <button>NO PAGADO</button>
+            <div class="search-bar">
+                <input type="text" placeholder="BUSCADOR..">
+            </div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>MATRÍCULA</th>
+                    <th>EMPLEADO</th>
+                    <th>DEPARTAMENTO</th>
+                    <th>FECHA</th>
+                    <th>HORAS EXTRAS</th>
+                    <th>SUELDO</th>
+                    <th>ESTADO</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5987452</td>
+                    <td>Rodolfo Agustín</td>
+                    <td>Ventas</td>
+                    <td>21/06/24</td>
+                    <td>14</td>
+                    <td>$35,000.00</td>
+                    <td><span class="table-status paid">PAGADO</span></td>
+                </tr>
+                <tr>
+                    <td>8957156</td>
+                    <td>Federico Rivera</td>
+                    <td>Servicio al cliente</td>
+                    <td>21/06/24</td>
+                    <td>10</td>
+                    <td>$20,000.00</td>
+                    <td><span class="table-status unpaid">NO PAGADO</span></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- Más filas aquí -->
             </tbody>
-    </table>
-
-    
+        </table>
+        <div class="pagination">
+            <button class="active">1</button>
+            <button>2</button>
+        </div>
+        <script src="js/nomina.js"></script>
+    </div>
 </body>
 </html>
